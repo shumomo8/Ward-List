@@ -10,12 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+   
 
-    @IBAction func back (sender: UIStoryboardSegue){
+  @IBAction func back (sender: UIStoryboardSegue){
     }
     
     @IBAction func startButtonTapped(){
@@ -40,5 +37,9 @@ class ViewController: UIViewController {
         }
     }
     
+        override func viewDidLoad() {
+               super.viewDidLoad()
+               // Do any additional setup after loading the view.
+           }
 }
 

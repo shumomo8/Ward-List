@@ -8,8 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController{
-    
+class AddViewController: UIViewController {
     @IBOutlet var englishTextField: UITextField!
     @IBOutlet var japaneseTextField: UITextField!
     
@@ -41,10 +40,12 @@ class AddViewController: UIViewController{
         super.viewDidLoad()
         if saveDate.array(forKey: "WORD") != nil {
             wordArray = saveDate.array(forKey: "WORD") as! [Dictionary<String, String>]
-
+            
+       
+        }
+    
+       
         // Do any additional setup after loading the view.
     }
-    
     }
-}
-    
+

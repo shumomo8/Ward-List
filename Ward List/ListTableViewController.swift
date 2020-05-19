@@ -32,30 +32,29 @@ class ListTableViewController: UITableViewController {
         
     }
     // MARK: - Table view data source
-    //セクション数を指定する
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    //セクション数を指定
+       override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    //セルの個数を指定する
+    //セルの個数を指定
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return wordArray.count
     }
 
-    //セルの中身の個数を指定する
+    //セルの中身の個数を指定
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
+          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
 
-        let nowIndexPathDictionary = wordArray[indexPath.row]
-        
-        cell.englishLabel.text = nowIndexPathDictionary["english"]
-        cell.japaneseLabel.text = nowIndexPathDictionary["japanese"]
+          let nowIndexPathDictionary = wordArray[indexPath.row]
+          
+          cell.englishLabel.text = nowIndexPathDictionary["english"]
+          cell.japaneseLabel.text = nowIndexPathDictionary["japanese"]
 
-        return cell
-    }
-
-    /*
+          return cell
+      }
+          /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 

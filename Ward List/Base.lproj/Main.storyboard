@@ -217,7 +217,7 @@
         <!--一覧-->
         <scene sceneID="uTw-CB-RnA">
             <objects>
-                <tableViewController id="EzE-7Y-FEJ" customClass="ListTabelViewController" customModule="Ward_List" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EzE-7Y-FEJ" customClass="ListTableViewController" customModule="Ward_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c4h-NZ-EAQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="KXx-xY-v5O" customClass="ListTableViewCell" customModule="Ward_List" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KXx-xY-v5O" id="TSN-Cf-fpx" customClass="UITableViewCell">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KXx-xY-v5O" id="TSN-Cf-fpx" customClass="ListTableViewCell" customModule="Ward_List" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -250,6 +250,10 @@
                                         <outlet property="japaneseLabel" destination="KFa-lY-khs" id="GVz-oh-aEZ"/>
                                     </connections>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="englishLabel" destination="fdj-SY-7Pz" id="sqK-hT-gXn"/>
+                                    <outlet property="japaneseLabel" destination="KFa-lY-khs" id="T0G-kL-rWN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
