@@ -49,11 +49,11 @@
                                     <segue destination="kMj-3U-nuH" kind="presentation" id="dvV-UU-T5v"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mcg-Xo-Cr0">
-                                <rect key="frame" x="20.5" y="226.5" width="373" height="169"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NKb-DA-jEU">
+                                <rect key="frame" x="53.5" y="187" width="307" height="210"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="373" id="gTc-Mf-8qA"/>
-                                    <constraint firstAttribute="height" constant="169" id="tk4-tm-BbE"/>
+                                    <constraint firstAttribute="width" constant="307" id="jVq-Dp-39e"/>
+                                    <constraint firstAttribute="height" constant="210" id="p7J-T5-piJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -61,11 +61,10 @@
                         <constraints>
                             <constraint firstItem="jim-fT-mYG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nb-Qy-jyp"/>
                             <constraint firstItem="jel-Gb-6ha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Erf-tB-uMg"/>
-                            <constraint firstItem="mcg-Xo-Cr0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-137" id="Hty-Kl-8vY"/>
                             <constraint firstItem="jel-Gb-6ha" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130" id="IMi-YN-b4g"/>
+                            <constraint firstItem="NKb-DA-jEU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-156" id="TKr-yk-3KJ"/>
                             <constraint firstItem="jim-fT-mYG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="269" id="aDr-Vd-QLt"/>
-                            <constraint firstItem="mcg-Xo-Cr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQF-iQ-sSf"/>
-                            <constraint firstItem="mcg-Xo-Cr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zy8-yh-4e7"/>
+                            <constraint firstItem="NKb-DA-jEU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rPP-ir-l2T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,13 +85,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hg8-sk-te3">
-                                <rect key="frame" x="20" y="258" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="7X5-nQ-9Zg"/>
-                                    <constraint firstAttribute="width" constant="240" id="KA1-wF-udd"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー問題ー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktG-k9-L24">
                                 <rect key="frame" x="186" y="130" width="68" height="17"/>
                                 <constraints>
@@ -103,6 +95,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="AtW-hd-bpY">
+                                <rect key="frame" x="154" y="436" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1Ud-J0-6AI"/>
+                                    <constraint firstAttribute="height" constant="128" id="4Aj-mT-x0J"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdj-JR-dlB">
+                                <rect key="frame" x="21" y="258" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MH0-3n-ugt"/>
+                                    <constraint firstAttribute="width" constant="240" id="Q7f-q5-ude"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd5-cd-H6y">
                                 <rect key="frame" x="119" y="312" width="45" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
@@ -131,26 +137,19 @@
                                     <action selector="nextButtonTapped" destination="iXN-YN-ti7" eventType="touchUpInside" id="7mH-V2-EQd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="word_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hcu-1i-5r1">
-                                <rect key="frame" x="154" y="436" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="fjW-4P-tYB"/>
-                                    <constraint firstAttribute="height" constant="128" id="weO-5d-tjp"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.42805927989999998" green="0.58169370890000005" blue="0.5019519925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Nd5-cd-H6y" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="-127.5" id="5zl-Uj-hzJ"/>
                             <constraint firstItem="ktG-k9-L24" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="-309.5" id="GBu-A1-CDU"/>
+                            <constraint firstItem="AtW-hd-bpY" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="52" id="Hz9-pW-fZS"/>
+                            <constraint firstItem="bdj-JR-dlB" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="-126" id="LRA-rO-mPf"/>
                             <constraint firstItem="ktG-k9-L24" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="13" id="Mkt-9P-DdQ"/>
+                            <constraint firstItem="AtW-hd-bpY" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="67" id="PaR-ld-RYH"/>
                             <constraint firstItem="7YE-aA-HfR" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="68.5" id="S4F-j2-pm5"/>
-                            <constraint firstItem="Hg8-sk-te3" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="-126" id="XIu-t7-gBA"/>
-                            <constraint firstItem="Hg8-sk-te3" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="-67" id="Zek-Ib-kpE"/>
+                            <constraint firstItem="bdj-JR-dlB" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="-66" id="YNW-TL-HXB"/>
                             <constraint firstItem="9gB-QG-7bM" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" id="ZyL-fT-1Ce"/>
                             <constraint firstItem="7YE-aA-HfR" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="52.5" id="fcQ-BZ-41V"/>
-                            <constraint firstItem="Hcu-1i-5r1" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="67" id="oO1-4A-VE0"/>
-                            <constraint firstItem="Hcu-1i-5r1" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="54" id="qJi-b9-zDK"/>
                             <constraint firstItem="9gB-QG-7bM" firstAttribute="centerY" secondItem="0Gv-9b-9iN" secondAttribute="centerY" constant="244.5" id="v4R-aK-dtO"/>
                             <constraint firstItem="Nd5-cd-H6y" firstAttribute="centerX" secondItem="0Gv-9b-9iN" secondAttribute="centerX" constant="-65.5" id="ybf-gc-66S"/>
                         </constraints>
@@ -191,11 +190,11 @@
                                     <segue destination="tjn-5r-eBD" kind="unwind" unwindAction="backWithSender:" id="fRE-aA-ICA"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZrF-o8-5kV">
-                                <rect key="frame" x="92" y="175" width="231" height="238"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fin.png" translatesAutoresizingMaskIntoConstraints="NO" id="4kp-VB-cOh">
+                                <rect key="frame" x="70.5" y="213" width="273" height="227"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="238" id="CFa-F3-nmq"/>
-                                    <constraint firstAttribute="width" constant="231" id="Wgz-hH-sUd"/>
+                                    <constraint firstAttribute="height" constant="227" id="Z7I-Cw-PjH"/>
+                                    <constraint firstAttribute="width" constant="273" id="oP5-s1-fnn"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -203,8 +202,9 @@
                         <constraints>
                             <constraint firstItem="uTM-qX-VYf" firstAttribute="centerY" secondItem="3Qq-VB-jnS" secondAttribute="centerY" constant="241.5" id="0Q5-Dg-7lk"/>
                             <constraint firstItem="uTM-qX-VYf" firstAttribute="centerX" secondItem="3Qq-VB-jnS" secondAttribute="centerX" id="7pX-w6-UFY"/>
-                            <constraint firstItem="ZrF-o8-5kV" firstAttribute="centerY" secondItem="3Qq-VB-jnS" secondAttribute="centerY" constant="-130" id="Vv0-9n-1ew"/>
-                            <constraint firstItem="ZrF-o8-5kV" firstAttribute="centerX" secondItem="3Qq-VB-jnS" secondAttribute="centerX" id="WSO-0p-wN7"/>
+                            <constraint firstItem="4kp-VB-cOh" firstAttribute="centerX" secondItem="3Qq-VB-jnS" secondAttribute="centerX" id="qe0-g9-fRK"/>
+                            <constraint firstItem="4kp-VB-cOh" firstAttribute="centerY" secondItem="3Qq-VB-jnS" secondAttribute="centerY" constant="-121.5" id="wwK-BR-1vm"/>
+                            <constraint firstItem="4kp-VB-cOh" firstAttribute="centerX" secondItem="3Qq-VB-jnS" secondAttribute="centerX" id="yWu-ka-SBJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GUO-jc-Akk"/>
                     </view>
